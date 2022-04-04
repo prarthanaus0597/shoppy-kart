@@ -1,0 +1,72 @@
+// import axios from "axios";
+const data = await fetch("/getproducts/discount", {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
+
+const res = await data.json();
+
+export const getProductsDiscount = () => ({
+  type: "GET_PRODUCTS_DISCOUNT",
+  payload: res,
+});
+// export const getProductsElectronics = () => async (dispatch) => {
+
+//     const data = await fetch("/getproducts/discount", {
+//       method: "GET",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//     });
+
+//   }
+
+// export const getProductsDiscount = () => async (dispatch) => {
+//   const config = {
+//     Headers: {
+//       "Content-Type": "application/json",
+//     },
+//   };
+//   await axios.get("/getproducts/discount", config).then((res) => {
+//     return { type: "SUCCESS_GET_PRODUCTS_DISCOUNT", payload: res.data };
+//   });
+// };
+
+// export const getProductsDiscount = () => async (dispatch) => {
+//   try {
+//     const data = await fetch("/getproducts/discount", {
+//       method: "GET",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//     });
+
+//     const res = await data.json();
+//     // console.log(res);
+//     dispatch({ type: "SUCCESS_GET_PRODUCTS_DISCOUNT", payload: res });
+//   } catch (error) {
+//     dispatch({ type: "FAIL_GET_PRODUCTS_DISCOUNT", payload: error.response });
+//   }
+// };
+
+// export const getProductsElectronics = () => async (dispatch) => {
+//   try {
+//     const data = await fetch("/getproducts/discount", {
+//       method: "GET",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//     });
+
+//     const res = await data.json();
+//     // console.log(res);
+//     dispatch({ type: "SUCCESS_GET_PRODUCTS_ELECTRONICS", payload: res });
+//   } catch (error) {
+//     dispatch({
+//       type: "FAIL_GET_PRODUCTS_ELECTRONICS",
+//       payload: error.response,
+//     });
+//   }
+// };

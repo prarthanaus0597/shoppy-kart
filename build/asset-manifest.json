@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.512622be.css",
+    "main.js": "/static/js/main.d5478cd3.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/shoppykart.PNG": "/static/media/shoppykart.e05ae734354e2a5e6e5c.PNG",
+    "index.html": "/index.html",
+    "main.512622be.css.map": "/static/css/main.512622be.css.map",
+    "main.d5478cd3.js.map": "/static/js/main.d5478cd3.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.512622be.css",
+    "static/js/main.d5478cd3.js"
+  ]
+}

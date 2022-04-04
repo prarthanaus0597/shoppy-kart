@@ -1,0 +1,50 @@
+.card{
+width: 50%;
+}
+.pay-title{
+   text-align: center;
+   border-bottom:2px solid black ;
+  margin-left: 100px;
+margin-right: 100px;
+
+}
+.h6{
+    margin-left: 40px;
+    color:brown;
+
+}
+.buttons-payment{
+display: flex; 
+flex-direction: row;   
+justify-content: center;
+
+}
+.pay-btn{
+    display: flex;
+    /* align-self: center; */
+    margin: 10px;
+}
+.home-btn{
+left: 10px;
+}
+@media (max-width: 600px) {
+
+    .card{
+        width:90%;
+       
+    }
+    .buttons-payment {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+      
+    }
+    .home-btn {
+        
+        top: 20px;
+        left:0;
+        width: 100px;
+        bottom:20px;
+
+    }
+}

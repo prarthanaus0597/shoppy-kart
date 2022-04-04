@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment status</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Bubblegum Sans"
+    />
+
+    <style>
+      h1 {
+        margin: auto;
+        font-family: "Bubblegum Sans";
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- style it however you want -->
+    <!-- the 'response' is coming from the context -->
+    {% if response.STATUS == "TXN_SUCCESS" %}
+    <script>
+      alert("Transaction success....Redirecting to Home page..........");
+      window.location.replace("https://shoppy-kart.herokuapp.com/");
+    </script>
+    {% else %}
+    <script>
+      alert(
+        "Transaction Failed please try again....Redirecting to Home page.........."
+      );
+      window.location.replace("https://shoppy-kart.herokuapp.com/");
+    </script>
+    {% endif %}
+  </body>
+</html>

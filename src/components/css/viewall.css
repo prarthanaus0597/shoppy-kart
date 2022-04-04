@@ -1,0 +1,24 @@
+.img_text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.img_text img {
+  width: 110px;
+  height: 150px;
+  margin-top: 4px;
+  user-select: none;
+}
+.navlink .btn-view {
+  text-decoration: none;
+}
+.titles {
+  color: rgb(12, 11, 11);
+  border-bottom: 2px solid rgb(12, 11, 11);
+  /* border-left: 2px solid rgb(12, 11, 11); */
+  width: max-content;
+  margin: auto;
+
+  border-radius: 2px;
+  padding-left: 5px;
+}

@@ -1,0 +1,217 @@
+.logo {
+  color: "white";
+  text-decoration: none;
+  font-family: "Pacifico";
+  font-style: "oblique";
+  user-select: none;
+  display: flex;
+  align-items: center;
+  font-size: larger;
+}
+
+header {
+  background-color: #131921;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+}
+h3 {
+  text-decoration: none;
+}
+header nav {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 4;
+  text-decoration: none;
+}
+
+header nav .logo {
+  width: 110px;
+  text-decoration: none;
+}
+
+header nav .left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  flex: 0.7;
+}
+
+header nav .left input {
+  width: 400px;
+  height: 38px;
+  border: none;
+  outline: none;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+header nav .left .search_icon {
+  color: "#ebd834";
+  background-color: white;
+  height: 38px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  cursor: pointer;
+}
+
+header nav .nav_searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 0.3;
+}
+.nav_btn {
+  text-decoration: none;
+  padding: auto;
+}
+
+header nav .right .nav_btn a {
+  color: #fff;
+  text-decoration: none;
+  background: #ebd834;
+  font-weight: 600;
+  margin-right: 2px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 6px 32px;
+  width: 100%;
+  height: 38px;
+}
+
+header nav .right .nav_btn a:hover {
+  background: white;
+  color: #ebd834;
+  border-color: #0062cc;
+  box-shadow: "none";
+}
+
+header nav .right .cart_btn {
+  display: flex;
+  margin-left: 22px;
+  cursor: pointer;
+  margin-top: 2px;
+  padding: 8px;
+
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3px;
+}
+
+header nav .right .cart_btn #icon {
+  margin-right: 10px;
+  color: #fff;
+  margin-top: 2px;
+}
+
+header nav .right .cart_btn p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 11px;
+  margin-right: 10px;
+}
+
+.right a {
+  text-decoration: none;
+}
+.home_link {
+  text-decoration: none;
+}
+
+header nav .avtar {
+  cursor: pointer;
+}
+header nav .avtar2 {
+  cursor: pointer;
+  background-color: #1365cf;
+}
+
+header .sidebar {
+  display: none;
+}
+
+header .extrasearch {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  top: 50px;
+  width: 440px;
+}
+
+header .extrasearch a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* drawer sty */
+header nav .drawer {
+  width: 250px;
+  background-color: red;
+}
+
+@media (max-width: 800px) {
+  header .sidebar {
+    display: block;
+  }
+  header nav {
+    overflow: hidden;
+  }
+  header nav .right .nav_btn,
+  header nav .right .avtar2,
+  header nav .right .avtar {
+    display: none;
+  }
+  header nav .left input {
+    width: 150px;
+    margin-left: 10px;
+  }
+
+  header nav .left input::placeholder {
+    visibility: hidden;
+  }
+
+  header nav .right .cart_btn {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 568px) {
+  header nav .left input {
+    display: none;
+  }
+
+  header nav .left .search_icon {
+    /* color: #fff;
+        font-size: 18px;
+        background-color: #131921; */
+    display: none;
+  }
+  header nav .logo {
+    width: 95px;
+    /* //margin-top: 10px; */
+    /* margin-left: 67px; */
+    align-items: center;
+  }
+}
