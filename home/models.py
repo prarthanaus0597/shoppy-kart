@@ -85,7 +85,7 @@ class OrderPayment(models.Model):
     address=models.TextField(null=False ,default='')
 
     def __str__(self):
-        return self.order_payment_id
+        return str(self.order_payment_id)
 
 
 class OrderItems(models.Model):
@@ -98,4 +98,4 @@ class OrderItems(models.Model):
     order_date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.order_item_id
+        return str(self.order_item_id)
