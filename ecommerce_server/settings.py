@@ -155,16 +155,17 @@ CORS_ALLOW_CREDENTIALS = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-SITE_URL = 'http://shoppykart.herokuapp.com'
+SITE_URL = 'http://shoppy-kart.herokuapp.com'
 
 # Allow the origin from where you are sending the request
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000',
     'http://about:blank',
-    'http://shoppykart.herokuapp.com'
+    'http://shoppykart.herokuapp.com',
+     'http://shoppy-kart.herokuapp.com'
 
 ]
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'shoppykart.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'shoppykart.herokuapp.com','http://shoppy-kart.herokuapp.com']
 
 
 # Default primary key field type
